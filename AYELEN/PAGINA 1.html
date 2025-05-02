@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE VIDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+            color: #333;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #555;
+            width: 700px;
+            margin: 20px auto;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 200px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .social-icons i {
+            margin: 5px;
+            font-size: 24px;
+            color: #4b0082;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        ul, li {
+            list-style-type: none;
+            padding: 5px;
+        }
+
+        marquee {
+            color: #fff;
+            background: #333;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>DESCRIPCIÓN PERSONAL</h1>
+    <hr>
+    <center>
+        <img src="foto.jpeg" width="200" style="border-radius: 50%; box-shadow: 0 0 10px #000;">
+    </center>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+        MI NOMBRE ES AYELEN MICHELLE LOPEZ SIGUANTAY, TENGO 14 AÑOS DE EDAD. <br>
+        SOY DE FLORES COSTA CUCA DE ALDEA VILLA HERMOSA. <br>
+        ME GUSTA CONVERSAR CON LAS PERSONAS ADULTAS, LOS GATOS, LOS CONEJOS Y LOS PERRITOS. <br>
+        TAMBIÉN ME GUSTA VER CARICATURAS Y PASEAR.
+    </p>
+
+    <div class="social-icons" style="text-align: center;">
+        <i class="fas fa-envelope"></i> SIGUANTAYAYELEN@GMAIL.COM<br>
+        <i class="fab fa-facebook"></i> AYELEN SIGUANTAY<br>
+        <i class="fab fa-instagram"></i> IM MISHELL 17<br>
+        <i class="fab fa-tiktok"></i> AYELEN SIGUL
+    </div>
+
+    <details>
+        <summary>📷 MIS HOBBIES</summary>
+        <div class="card-container">
+            <div class="card"><img src="tik tok.webp" alt="TikTok"></div>
+            <div class="card"><img src="me gusta dormir.jpg" alt="Dormir"></div>
+            <div class="card"><img src="conejo.jpg" alt="Conejo"></div>
+        </div>
+    </details>
+
+    <h2>MIS FOBIAS</h2>
+    <div class="card-container">
+        <div class="card"><img src="serpiente.jpg" alt="Serpiente"></div>
+        <div class="card"><img src="araña.jpg" alt="Araña"></div>
+        <div class="card"><img src="mono.jpg" alt="Mono"></div>
+    </div>
+
+    <marquee behavior="scroll" direction="left">¡Bienvenida a mi hoja de vida digital!</marquee>
+
+    <hr>
+    <h2>📘 INFORMACIÓN ACADÉMICA</h2>
+    <ul style="text-align: center;">
+        <li>2025 - Segundo Básico: Liceo Técnico Vocacional LITECVO</li>
+        <li>2024 - Primero Básico: Liceo Técnico Vocacional LITECVO</li>
+        <li>2023 - Sexto Primaria: EORM Auyón JM</li>
+        <li>2022 - Quinto Primaria: EORM Auyón JM</li>
+        <li>2021 - Cuarto Primaria: EORM Auyón JM</li>
+        <li>2020 - Tercero Primaria: EORM Auyón JM</li>
+        <li>2019 - Segundo Primaria: EORM Auyón JM</li>
+        <li>2018 - Primero Primaria: EORM Auyón JM</li>
+    </ul>
+
+    <h2>💖 COSAS FAVORITAS</h2>
+    <ul style="text-align: center;">
+        <li><i class="fas fa-futbol"></i> Equipo: Real Madrid</li>
+        <li><i class="fas fa-microphone"></i> Artista: Peso Pluma</li>
+        <li><i class="fas fa-futbol-ball"></i> Jugador: Vinicius Junior</li>
+        <li><i class="fas fa-sun"></i> Época: Verano</li>
+        <li><i class="fas fa-paw"></i> Animal: Conejo</li>
+        <li><i class="fas fa-paint-brush"></i> Color: Lila</li>
+        <li><i class="fas fa-flag"></i> País favorito: Brasil</li>
+    </ul>
+
+    <h1 style="text-align:center;">🍖 COMIDA FAVORITA: CHURRASCO</h1>
+
+</body>
+</html>
