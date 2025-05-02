@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoja de Vida - Justin Yahir</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #1e1e2f;
+      --text-color: #ffffff;
+      --primary-color: #A50044; /* Barca rojo */
+      --secondary-color: #004D98; /* Barca azul */
+      --highlight-color: #ffd700; /* Dorado */
+      --card-bg: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      background-image: url('https://wallpapercave.com/wp/wp2353123.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      transition: all 0.5s ease;
+    }
+
+    .dark-mode {
+      --bg-color: #f4f4f4;
+      --text-color: #000;
+      --card-bg: rgba(0, 0, 0, 0.05);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    h1, h2 {
+      color: var(--highlight-color);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: var(--primary-color);
+      width: 80%;
+      margin: 1rem auto;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .social-icons i {
+      font-size: 1.5rem;
+      margin: 10px;
+      color: var(--highlight-color);
+      transition: color 0.3s ease;
+    }
+
+    .social-icons i:hover {
+      color: var(--secondary-color);
+    }
+
+    .toggle-btn {
+      display: flex;
+      justify-content: center;
+      margin: 1rem auto;
+    }
+
+    .toggle-btn button {
+      background: var(--highlight-color);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-btn button:hover {
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--highlight-color);
+    }
+
+    marquee {
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-grid .card {
+      flex: 1 1 250px;
+      margin: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .image-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-btn">
+    <button onclick="toggleMode()"><i id="modeIcon" class="fas fa-moon"></i> Modo Claro/Oscuro</button>
+  </div>
+
+  <div class="container">
+    <center>
+      <img src="imagen.webp" width="180" alt="Justin">
+      <h1>JUSTIN YAHIR SANCHEZ MAZARIEGOS</h1>
+      <hr>
+      <p>Tengo 14 años, vivo en Los Paz. Soy alegre, sociable y me encanta jugar fútbol. Me gusta ayudar a mi mamá, salir de paseo con mis primos, y mi comida favorita es la pizza.</p>
+
+      <h2>📧 Información Personal</h2>
+      <hr>
+      <div class="social-icons">
+        <p><i class="fas fa-envelope"></i> yahirjustin@gmail.com</p>
+        <p><i class="fab fa-facebook"></i> Justin Sanchez</p>
+        <p><i class="fab fa-instagram"></i> Justin sanchez♥♫</p>
+        <p><i class="fab fa-tiktok"></i> Justin Sanchez♣♫</p>
+      </div>
+
+      <details>
+        <summary>🎯 Mis Hobbies</summary>
+        <div class="image-grid">
+          <div class="card"><img src="imagen 1.jpg" alt=""></div>
+          <div class="card"><img src="imagen 2.jpg" alt=""></div>
+          <div class="card"><img src="imagen 3.png" alt=""></div>
+          <div class="card"><img src="imagen 4.jpg" alt=""></div>
+        </div>
+      </details>
+
+      <h2>😨 Mis Fobias</h2>
+      <marquee behavior="scroll" direction="left">
+        <img src="miedo 1.jpg" width="250">
+        <img src="miedo 2.jpg" width="250">
+        <img src="miedo 3.jpg" width="250">
+      </marquee>
+
+      <h2>📚 Información Académica</h2>
+      <ol>
+        <li>2025 - Segundo básico - INEB</li>
+        <li>2024 - Primero básico - INEB</li>
+        <li>2023 - Sexto grado - EOUM Cristóbal Colón</li>
+        <li>2022 - Quinto grado - EOUM Cristóbal Colón</li>
+        <li>2021 - Cuarto grado - EOUM Cristóbal Colón</li>
+        <li>2020 - Tercer grado - EOUM Cristóbal Colón</li>
+        <li>2019 - Segundo grado - EOUM Cristóbal Colón</li>
+        <li>2018 - Primer grado - EOUM Cristóbal Colón</li>
+      </ol>
+
+      <h2>🔍 Otros Datos</h2>
+      <ul>
+        <li>Equipo favorito: FC Barcelona</li>
+        <li>Artista favorito: Manuel Turizo</li>
+        <li>Jugador favorito: Lionel Messi</li>
+        <li>Época favorita: Invierno</li>
+        <li>Animal favorito: Loro</li>
+        <li>Color favorito: Amarillo</li>
+        <li>País favorito: Brasil</li>
+      </ul>
+
+      <h2>🍕 Comidas Favoritas</h2>
+      <div class="image-grid">
+        <div class="card"><img src="pizza.webp" alt=""></div>
+        <div class="card"><img src="hamburguesa.avif" alt=""></div>
+        <div class="card"><img src="pllo2.jpg" alt=""></div>
+      </div>
+    </center>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+      const icon = document.getElementById("modeIcon");
+      if (document.body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      }
+    }
+  </script>
+</body>
+</html>
