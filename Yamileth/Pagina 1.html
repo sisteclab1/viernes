@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HOJA DE VIDA</title>
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Fondo con degradado */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, #000000, #a7d3f2); /* negro a celeste pastel */
+            color: white;
+            animation: fadeIn 1s ease;
+        }
+
+        h1, h2 {
+            color: #00ffff;
+        }
+
+        hr {
+            border: 1px solid #00ffff;
+            width: 80%;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Contenedor general centrado */
+        center {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Tarjetas */
+        .card {
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid #00ffff88;
+            border-radius: 12px;
+            box-shadow: 0 0 12px #00ffff55;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        marquee img {
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .icon {
+            color: #00ffff;
+            margin-right: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="Key.jpeg" width="200" class="card">
+        <h1><i class="fas fa-user icon"></i>DESCRIPCIÓN PERSONAL</h1>
+        <hr>
+        <p>MI NOMBRE YAMILETH SANTIZO, TENGO 13 AÑOS, VIVO EN ALDEA EL MANANTIAL SECTOR EL CALLEJÓN... (continúa tu texto)</p>
+        <hr>
+
+        <h2><i class="fas fa-id-card icon"></i>INFORMACIÓN PERSONAL</h2>
+        <p><i class="fas fa-envelope icon"></i>Ksantizb9@gmail.com</p>
+        <p><i class="fab fa-facebook icon"></i>Yamileth Santizo</p>
+        <p><i class="fab fa-instagram icon"></i>Key_.y9</p>
+        <p><i class="fab fa-tiktok icon"></i>Key._xsb</p>
+        <hr>
+
+        <details>
+            <summary><i class="fas fa-heart icon"></i>MIS HOBBIES</summary>
+            <div class="container">
+                <div class="card"><img src="DORMIR.avif" alt="Dormir"></div>
+                <div class="card"><img src="BAILAR.jpg" alt="Bailar"></div>
+                <div class="card"><img src="manhwa.jpg" alt="Manhwa"></div>
+                <div class="card"><img src="musica.avif" alt="Música"></div>
+            </div>
+        </details>
+
+        <h2><i class="fas fa-exclamation-triangle icon"></i>MIS FOBIAS</h2>
+        <marquee behavior="" direction="">
+            <img src="MIEDO A LA OSCURIDAD.avif" width="300" height="186">
+            <img src="miedo a la soledad.png" width="300" height="186">
+            <img src="alturas.webp" width="300" height="186">
+        </marquee>
+        <hr>
+
+        <h2><i class="fas fa-graduation-cap icon"></i>INFORMACIÓN ACADÉMICA</h2>
+        <ol>
+            <li>2025 - 2DO BÁSICO - I.N.E.B</li>
+            <li>2024 - 1RO BÁSICO - I.N.E.B</li>
+            <li>2023 - 6TO PRIMARIA - E.O.R.M SECTOR EL CALLEJÓN</li>
+            <li>2022 - 5TO PRIMARIA - E.O.R.M SECTOR EL CALLEJÓN</li>
+            <li>2021 - 4TO PRIMARIA - E.O.R.M SECTOR EL CALLEJÓN</li>
+            <li>2020 - 3RO PRIMARIA - E.O.R.M SECTOR EL CALLEJÓN</li>
+            <li>2019 - 2DO PRIMARIA - E.O.R.M SECTOR EL CALLEJÓN</li>
+            <li>2018 - 1RO PRIMARIA - E.O.R.M SECTOR EL CALLEJÓN</li>
+        </ol>
+        <hr>
+
+        <h2><i class="fas fa-info-circle icon"></i>OTROS DATOS</h2>
+        <ul>
+            <li><strong>EQUIPO:</strong> NO TENGO</li>
+            <li><strong>ARTISTA:</strong> TV GIRL</li>
+            <li><strong>JUGADOR:</strong> NAGI - BLUE LOCK</li>
+            <li><strong>ÉPOCA:</strong> INVIERNO</li>
+            <li><strong>ANIMAL:</strong> GATO</li>
+            <li><strong>COLORES:</strong> NEGRO, CELESTE PASTEL, BLANCO</li>
+            <li><strong>PAÍSES:</strong> RUSIA, COREA, FRANCIA, ITALIA, BRAZIL</li>
+        </ul>
+        <hr>
+
+        <h2><i class="fas fa-pizza-slice icon"></i>COMIDAS FAVORITAS</h2>
+        <div class="container">
+            <div class="card"><img src="pizza.jpg" alt="Pizza"></div>
+            <div class="card"><img src="tacos.jpg" alt="Tacos"></div>
+            <div class="card"><img src="alitas.jpg" alt="Alitas"></div>
+        </div>
+    </center>
+</body>
+</html>
