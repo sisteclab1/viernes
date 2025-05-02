@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Fredy</title>
+    <style>
+        /* Reset y cuerpo */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.light-mode {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* Fondo del FC Barcelona */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image: url('fcbarcelona.jpg'); /* Cambia por tu imagen */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+            animation: backgroundMove 30s infinite linear;
+        }
+
+        @keyframes backgroundMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        /* Tarjetas */
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .toggle-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        hr {
+            width: 80%;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <button class="toggle-button" onclick="toggleMode()">Modo Claro/Oscuro</button>
+
+    <center>
+        <img src="imagenhombre.webp" width="200">
+        <h1>Descripción Personal</h1>
+        <hr>
+        <p class="card">Mi nombre es Fredy Osvaldo de León Turcios, tengo 14 años de edad, vivo en aldea El Manantial...</p>
+
+        <h2>Información Personal</h2>
+        <hr>
+        <div class="social-icons">
+            <div class="card"><img src="gmail-icon.png" alt="Correo"><p>sisteclab2@gmail.com</p></div>
+            <div class="card"><img src="facebook-icon.png" alt="Facebook"><p>Fredy de León</p></div>
+            <div class="card"><img src="instagram-icon.png" alt="Instagram"><p>Fredy Turcios</p></div>
+            <div class="card"><img src="tiktok-icon.png" alt="TikTok"><p>Fredy el Guapo</p></div>
+        </div>
+
+        <h2>Mis Hobbies</h2>
+        <details>
+            <summary>Ver mis hobbies</summary>
+            <div class="card">
+                <img src="imagen1.jpg" width="300">
+                <img src="imagen2.jpg" width="300">
+                <img src="imagen3.avif" width="300">
+                <img src="imagen4.jpg" width="300">
+            </div>
+        </details>
+
+        <h2>Mis Fobias</h2>
+        <marquee behavior="scroll" direction="left">
+            <img src="imagebrueda.jpg" width="300" height="200">
+            <img src="imagenmiedo.jpg" width="300" height="200">
+            <img src="imagenllorona.jpg" width="300" height="200">
+        </marquee>
+
+        <h2>Información Académica</h2>
+        <ol class="card">
+            <li>2025 - Segundo Básico - INEB</li>
+            <li>2024 - Primero Básico - INEB</li>
+            <li>2023 - Sexto - EOUM Cristóbal Colón</li>
+            <li>2022 - Quinto - EOUM Cristóbal Colón</li>
+            <li>2021 - Cuarto - EOUM Cristóbal Colón</li>
+            <li>2020 - Tercero - EOUM Cristóbal Colón</li>
+            <li>2019 - Segundo - EOUM Cristóbal Colón</li>
+            <li>2018 - Primero - EOUM Cristóbal Colón</li>
+        </ol>
+
+        <h2>Otros Datos</h2>
+        <ul class="card">
+            <li>Equipo favorito: FC Barcelona</li>
+            <li>Artista favorito: Fuerza Regida</li>
+            <li>Jugador favorito: Messi</li>
+            <li>Época favorita: Invierno</li>
+            <li>Animal favorito: Loro</li>
+            <li>Color favorito: Negro</li>
+            <li>País favorito: París</li>
+        </ul>
+
+        <h2>Comidas Favoritas</h2>
+        <div class="card">
+            <img src="camarones.jpg" width="300">
+            <img src="churrasco.jpg" width="300">
+            <img src="pizza.png" width="300">
+        </div>
+    </center>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+</html>
