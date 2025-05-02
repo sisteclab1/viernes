@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HOJA DE VIDA</title>
+  <link rel="icon" href="">
+  <!-- Íconos FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* Fondo con degradado negro y celeste */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #000000, #00cfff);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      color: #ffb6f0;
+      text-shadow: 0 0 5px #ffffffaa;
+    }
+
+    hr {
+      border: 1px solid #ffb6f0;
+      width: 80%;
+    }
+
+    center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Tarjetas de imagen */
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      border-radius: 15px;
+      padding: 10px;
+      margin: 10px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    /* Íconos redes */
+    .icono {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .icono:hover {
+      color: #ffb6f0;
+    }
+
+    details {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 10px;
+      width: 90%;
+    }
+
+    details[open] summary {
+      color: #00ffff;
+    }
+
+    marquee img {
+      margin: 0 10px;
+    }
+
+    /* Contenedor flexible de tarjetas */
+    .tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <img src="Gaby.jpeg" width="200" alt="Foto de perfil">
+    <h1>DESCRIPCIÓN PERSONAL</h1>
+    <hr>
+    <p>
+      MI NOMBRE ES MAGHABY DE LEÓN, TENGO 13 AÑOS, VIVO EN ALDEA EL MANANTIAL...<br>
+      ME GUSTA CONVIVIR CON MI SOBRINITO.
+    </p>
+
+    <h2>INFORMACIÓN PERSONAL</h2>
+    <p><i class="fas fa-envelope icono"></i> CORREO: magabydeleon08@gmail.com</p>
+    <p><i class="fab fa-facebook icono"></i> FACEBOOK: Gaby Leon</p>
+    <p><i class="fab fa-instagram icono"></i> INSTAGRAM: magh_aby</p>
+    <p><i class="fab fa-tiktok icono"></i> TIKTOK: @gaby.leon329</p>
+
+    <hr>
+    <details>
+      <summary><h2>MIS HOBBIES</h2></summary>
+      <div class="tarjetas">
+        <div class="card"><img src="Dormir.avif" alt="Dormir"></div>
+        <div class="card"><img src="BAILAR.jpg" alt="Bailar"></div>
+        <div class="card"><img src="MANHWA.jpg" alt="Leer manhwa"></div>
+        <div class="card"><img src="MUSICA.avif" alt="Escuchar música"></div>
+      </div>
+    </details>
+
+    <h2>MIS FOBIAS</h2>
+    <marquee behavior="scroll" direction="left">
+      <img src="OSCURIDAD.avif" width="300">
+      <img src="SOLEDAD.png" width="300" height="165">
+      <img src="ALTURA.webp" width="300" height="165">
+    </marquee>
+
+    <hr>
+    <h2>INFORMACIÓN ACADÉMICA</h2>
+    <ol>
+      <li>2025 - 2DO BÁSICO - I.N.E.B</li>
+      <li>2024 - 1RO BÁSICO - I.N.E.B</li>
+      <li>2023 - 6TO PRIMARIA - E.O.R.M REPOSO B2</li>
+      <li>2022 - 5TO PRIMARIA - E.O.R.M REPOSO B2</li>
+      <li>2021 - 4TO PRIMARIA - E.O.R.M REPOSO B2</li>
+      <li>2020 - 3RO PRIMARIA - E.O.R.M REPOSO B2</li>
+      <li>2019 - 2DO PRIMARIA - E.O.R.M REPOSO B2</li>
+      <li>2018 - 1RO PRIMARIA - E.O.R.M REPOSO B2</li>
+    </ol>
+
+    <hr>
+    <h2>OTROS DATOS</h2>
+    <ul>
+      <li>EQUIPO: BARCELONA</li>
+      <li>ARTISTA: NATANAEL CANO</li>
+      <li>JUGADOR: MESSI</li>
+      <li>ÉPOCA FAVORITA: INVIERNO</li>
+      <li>ANIMAL: GATO Y PERRO</li>
+      <li>COLORES: NEGRO, LILA, ROSA</li>
+      <li>PAÍS FAVORITO: BRASIL</li>
+    </ul>
+
+    <h2>COMIDAS FAVORITAS</h2>
+    <div class="tarjetas">
+      <div class="card"><img src="Macarrones.jpg" alt="Macarrones"></div>
+      <div class="card"><img src="Hamburguesa.jpg" alt="Hamburguesa"></div>
+      <div class="card"><img src="Tacos.jpg" alt="Tacos" height="200"></div>
+      <div class="card"><img src="alitas.jpg" alt="Alitas"></div>
+    </div>
+  </center>
+</body>
+</html>
