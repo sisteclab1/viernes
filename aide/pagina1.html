@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Aide Orozco</title>
+    <!-- Fuentes e iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Animaciones clave */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #80d8ff, 0 0 15px #40c4ff; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #00bcd4, 0 0 30px #00acc1; }
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to bottom right, #e0f7fa, #f8bbd0);
+            color: #333;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header {
+            background: linear-gradient(to right, #5c6bc0, #7986cb);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #3f51b5;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            animation: glow 2s infinite alternate;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            animation: fadeIn 2s ease;
+        }
+
+        .section {
+            padding: 30px 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease forwards;
+        }
+
+        h2 {
+            color: #7b1fa2;
+            font-family: 'Pacifico', cursive;
+            animation: bounce 2s infinite;
+        }
+
+        p, li {
+            font-size: 16px;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .social-btns a {
+            text-decoration: none;
+            margin: 8px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.4s ease, transform 0.3s ease;
+        }
+
+        .social-btns a:hover {
+            transform: scale(1.1);
+        }
+
+        .facebook { background: #3b5998; }
+        .instagram { background: #e1306c; }
+        .tiktok { background: #000000; }
+        .email { background: #dd4b39; }
+
+        details summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #512da8;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        details summary:hover {
+            color: #7e57c2;
+        }
+
+        marquee img {
+            margin: 0 15px;
+        }
+
+        ul, ol {
+            text-align: left;
+            margin: auto;
+            max-width: 600px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5c6bc0;
+            color: white;
+            font-size: 14px;
+            animation: fadeIn 2s ease;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img.webp" width="150" alt="Foto de perfil">
+    <h1>Aide Orozco</h1>
+    <p>Mi hoja de vida personal</p>
+</header>
+
+<div class="section">
+    <h2>Descripción Personal</h2>
+    <p>
+        Soy Aide Orozco, tengo 13 años y soy de Flores Costa Cuca. Me encanta hablar con personas adultas,
+        los animales como perros y gatos, y disfrutar bocadillos. Me gusta conocer lugares agradables,
+        ver caricaturas, telenovelas y escuchar música.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Información Personal</h2>
+    <div class="social-btns">
+        <a href="mailto:orozcoaide94@gmail.com" class="email"><i class="fas fa-envelope"></i> Email</a>
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+</div>
+
+<div class="section">
+    <details>
+        <summary>Mis Hobbies</summary>
+        <img src="imagen1.avif" width="250" height="150">
+        <img src="imagen2.jpg" width="250">
+        <img src="imagen3.jpg" width="250" height="150">
+        <img src="imagen4.jpg" width="250">
+    </details>
+</div>
+
+<div class="section">
+    <h2>Mis Fobias</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+        <img src="serpiente.jpeg" width="200" height="120">
+        <img src="montaña.jpg" width="200" height="120">
+        <img src="altura.jpg" width="200" height="120">
+    </marquee>
+</div>
+
+<div class="section">
+    <h2>Información Académica</h2>
+    <ol>
+        <li>2025 Segundo Básico: INSTITUTO OCUPACIONAL</li>
+        <li>2024 Primero Básico: INSTITUTO OCUPACIONAL</li>
+        <li>2023 Sexto Primaria: ESCUELA REGIONAL</li>
+        <li>2022 Quinto Primaria: ESCUELA REGIONAL</li>
+        <li>2021 Cuarto Primaria: ESCUELA REGIONAL</li>
+        <li>2020 Tercero Primaria: ESCUELA REGIONAL</li>
+        <li>2019 Segundo Primaria: ESCUELA REGIONAL</li>
+        <li>2018 Primero Primaria: ESCUELA REGIONAL</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Otros Datos</h2>
+    <ul>
+        <li><strong>Equipo:</strong> _</li>
+        <li><strong>Artista:</strong> Julieta Venegas</li>
+        <li><strong>Jugador:</strong> Paulo Dybala</li>
+        <li><strong>Época Favorita:</strong> Invierno</li>
+        <li><strong>Animal:</strong> Perritos</li>
+        <li><strong>Color:</strong> Azul</li>
+        <li><strong>País:</strong> España</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Comidas Favoritas</h2>
+    <img src="quesadillas.jpg" width="250" alt="Quesadillas">
+    <img src="hilachas.jpg" width="250" height="180" alt="Hilachas">
+    <img src="alitas buffalo.jpg" width="250" height="180" alt="Alitas Buffalo">
+</div>
+
+<footer>
+    © 2025 Aide Orozco | Todos los derechos reservados
+</footer>
+
+</body>
+</html>
