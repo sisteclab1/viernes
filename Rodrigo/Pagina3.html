@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FERRETERÍA</title>
+  <link rel="icon" href="logo1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      margin: 20px 0;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 40px;
+    }
+
+    marquee {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px;
+      background-color: #f9f9f9;
+      margin: 5px auto;
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    li:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <img src="logo1.png" width="250" alt="Logo de la ferretería">
+
+  <form>
+    <label for="busqueda"><i class="fas fa-search"></i> ¿Qué buscas?</label>
+    <input type="text" id="busqueda" placeholder="Ej: martillo, clavos...">
+    <button><i class="fas fa-search"></i> Buscar</button>
+  </form>
+
+  <nav>
+    <a href="Pagina1.html"><i class="fas fa-users"></i> Quiénes somos</a>
+    <a href="Pagina2.html"><i class="fas fa-boxes"></i> Ver Productos</a>
+  </nav>
+
+  <hr>
+
+  <h2><i class="fas fa-fire"></i> Lo más comprado</h2>
+  <marquee behavior="scroll" direction="left">
+    <img src="1.jpg" width="250" alt="Producto 1">
+    <img src="2.webp" width="250" alt="Producto 2">
+    <img src="3.jpg" width="250" alt="Producto 3">
+  </marquee>
+
+  <h3><i class="fas fa-map-marker-alt"></i> Sucursales</h3>
+  <ul>
+    <li><i class="fas fa-store"></i> Flores C.C</li>
+    <li><i class="fas fa-store"></i> Cuatepeque</li>
+    <li><i class="fas fa-store"></i> Génova</li>
+    <li><i class="fas fa-store"></i> Colomba</li>
+    <li><i class="fas fa-store"></i> Xela</li>
+    <li><i class="fas fa-store"></i> Reu</li>
+  </ul>
+
+</body>
+</html>
